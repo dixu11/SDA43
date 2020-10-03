@@ -43,6 +43,16 @@ public class PersonDemo {
 
 
 
+    /*    Zadbaj o dobre praktyki projektowania obiektów,
+        ustaw pola jako prywatne i dawaj do nich dostęp
+        za pomocą getterów i setterów tylko jeśli jest
+        to konieczne. Zamień metodę wyświetlającą na
+        przysłoniętą metodę toString().
+                Przygotuj dwa konstruktory. Pierwszy
+        pozwalający stworzyć domyślny samochód bez
+        przekazywania żadnych parametrów np. “Fiat 126p
+    przebieg 300 000tyś”. Drugi konstruktor pozwalający
+        ustawić dowolną markę i przebieg.*/
 
 
 

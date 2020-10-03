@@ -3,22 +3,26 @@ package oop.cars;
 public class CarDemo {
 
     public static void main(String[] args) {
-        Car car = new Car();
-        car.brand = "Fiat";
-        car.mileage = 50_000;
+        Car car = new Car("Fiat",50_000);
 
-        Car car2 = new Car();
-        car2.brand = "BMW";
-        car2.mileage = 100_000;
+        Car car2 = new Car("BMW", 100_000);
 
-        car.showCar();
-        car2.showCar();
+        Car car3 = new Car();
+
+//        car.showCar();
+//        car2.showCar();
+        System.out.println(car);
+        System.out.println(car2);
+        System.out.println(car3);
 
         car.drive(100);
         car2.drive(200);
 
-        car.showCar();
-        car2.showCar();
+        System.out.println(car);
+        System.out.println(car2);
+
+//        car.showCar();
+//        car2.showCar();
 
        int distance = car.howManyKmToService();
         System.out.println("To service: " + distance);

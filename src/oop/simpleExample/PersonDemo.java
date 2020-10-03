@@ -28,13 +28,6 @@ public class PersonDemo {
         person1.sayHello();
 
 
-        if (person1.getAge() > 18) {
-            System.out.println("adult!");
-        } else {
-            System.out.println("not adult");
-        }
-
-
         System.out.print( "Osoba o imieniu " +
                 person1.getName() + " to ");
 
@@ -44,10 +37,36 @@ public class PersonDemo {
             System.out.println("mężczyzna");
         }
 
+        if (person1.getAge() > 18) {
+            System.out.println("osoba pełnoletnia!");
+        } else {
+            System.out.println("osoba niepełnoletnia");
+        }
+
+
+
+
+
 
         //CD
         System.out.println(person1.toString());
         System.out.println(person1);
+
+        System.out.println("------------");
+        PersonService personService = new PersonService();
+        Person myNewPerson = personService.createPerson();
+        System.out.println("Powstaje: " + myNewPerson);
+        personService.readPersonInfo(myNewPerson);
+        System.out.println("Czy może pić?");
+        System.out.println(personService.isAllowedDrinkAlcohol(myNewPerson));
+
+
+
+
+
+
+
+
 
 
 

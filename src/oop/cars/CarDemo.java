@@ -1,5 +1,7 @@
 package oop.cars;
 
+import java.util.Scanner;
+
 public class CarDemo {
 
     public static void main(String[] args) {
@@ -27,6 +29,26 @@ public class CarDemo {
        int distance = car.howManyKmToService();
         System.out.println("To service: " + distance);
         System.out.println("To service: " + car.howManyKmToService());
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Robimy samochód!");
+        System.out.println("Jaka marka?");
+        String marka = scanner.nextLine();
+        System.out.println("Jaki przebieg?");
+        int mileage = scanner.nextInt();
+        scanner.close();
+        System.out.println("Robimy samochód...");
+        Car yourCar = new Car(marka, mileage);
+        System.out.println("Powstały samochód: " + yourCar);
+
+        int toService = yourCar.howManyKmToService();
+        if (toService > 0) {
+            System.out.println("Do przeglądu: " + toService);
+        } else {
+            System.out.println("Przegląd trzeba było zrobić " + -toService + "km temu!!");
+        }
+
     }
 
 }

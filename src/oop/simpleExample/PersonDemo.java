@@ -35,6 +35,16 @@ public class PersonDemo {
         }
 
 
+        System.out.print( "Osoba o imieniu " +
+                person1.getName() + " to ");
+
+        if (person1.getName().endsWith("a")) {
+            System.out.println("kobieta");
+        } else {
+            System.out.println("mężczyzna");
+        }
+
+
         //CD
         System.out.println(person1.toString());
         System.out.println(person1);

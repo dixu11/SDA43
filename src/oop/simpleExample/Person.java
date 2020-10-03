@@ -26,6 +26,10 @@ public class Person{
         return age;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override // opcjonalne
     public String toString(){
         return "name: "+ name +" age: "+  age;

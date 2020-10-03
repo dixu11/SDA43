@@ -1,4 +1,4 @@
-package oop.cars;
+package oop.zad3;
 
 import java.util.Scanner;
 

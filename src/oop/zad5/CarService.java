@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CarService {
 
 
+
     public Car createCar() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Robimy samochód!");

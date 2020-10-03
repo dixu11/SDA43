@@ -34,5 +34,18 @@ public class PersonDemo {
             System.out.println("not adult");
         }
 
+
+        //CD
+        System.out.println(person1.toString());
+        System.out.println(person1);
+
+
+
+
+
+
+
+
+
     }
 }

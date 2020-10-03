@@ -1,6 +1,6 @@
 package oop.simpleExample;
 
-public class Person {
+public class Person{
 
     //cechy - pola
     private String name;
@@ -24,6 +24,11 @@ public class Person {
 
     public int getAge(){
         return age;
+    }
+
+    @Override // opcjonalne
+    public String toString(){
+        return "name: "+ name +" age: "+  age;
     }
 
 

@@ -1,10 +1,9 @@
 package oop.inheritance;
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private int age;
-
 
     public Animal(String name, int age) {
         this.name = name;
@@ -15,9 +14,9 @@ public class Animal {
         System.out.println(name + " idzie spać");  // co zrobić żeby odnieść się do imienia?
     }
 
-    public void makeSound() {
-       // System.out.println("Zwierze wydaje dźwięk");
-    }
+    public abstract void makeSound();
+
+    public abstract void attack();
 
     @Override
     public String toString() {

@@ -22,4 +22,9 @@ public class Dog extends Animal{
         System.out.println(" barks! Woof! Wrrr");
     }
 
+    @Override
+    public void attack() {
+        System.out.println("Pies gryzie");
+    }
+
 }

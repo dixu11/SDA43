@@ -17,8 +17,15 @@ public class Cat extends Animal {
     }*/
 
 
+
+
     public void makeSound() {
         System.out.println(" miałczy, miał! ");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println("kot drapie");
     }
 
 }

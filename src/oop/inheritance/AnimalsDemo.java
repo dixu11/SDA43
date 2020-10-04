@@ -20,6 +20,7 @@ public class AnimalsDemo {
 
 
 
+
         List<Animal> animals = new ArrayList<>();
         animals.add(dog);
         animals.add(dog2);
@@ -28,6 +29,13 @@ public class AnimalsDemo {
         for (Animal animal : animals) {
             animal.goToSleep();
             animal.makeSound();
+            animal.attack();
         }
+
+        /*Animal unknownAnimal = new Animal("Pieszczoch",10);
+        unknownAnimal.makeSound();
+        unknownAnimal.goToSleep();*/ // wykorzystanie abstrakcyjnej klasy zabezpiecza przed tworzeniem obiektu z klasy ogolnej
+
+
     }
 }

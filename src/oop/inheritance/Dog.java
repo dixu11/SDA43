@@ -2,29 +2,24 @@ package oop.inheritance;
 
 public class Dog extends Animal{
 
-    private String name;
-    private int age;
-
-    public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Dog() {
+        super("Fafik",3);
     }
 
-    public Dog() {
+    public Dog(String name, int age){
+        super(name, age);
+    }
+
+
+
+
+  /*  public Dog() {
         name = "Fafik";
         age = 3;
+    }*/
+
+    public void makeSound() {
+        System.out.println(" barks! Woof! Wrrr");
     }
 
-    public void bark() {
-        System.out.println(name + " barks! Woof! Wrrr");
-    }
-
-
-    @Override
-    public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
 }

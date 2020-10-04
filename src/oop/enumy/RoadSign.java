@@ -4,15 +4,19 @@ public class RoadSign {
 
     private int x;
     private int y;
-    private int worldSide;
+    private WorldSide worldSide;
 
-    public RoadSign(int x, int y, int worldSide) {
+    public RoadSign(int x, int y, WorldSide worldSide) {
         this.x = x;
         this.y = y;
         this.worldSide = worldSide;
     }
 
-    public int getWorldSide() {
+    public WorldSide getWorldSide() {
         return worldSide;
+    }
+
+    public int getDegrees() {
+        return worldSide.getDegrees();
     }
 }

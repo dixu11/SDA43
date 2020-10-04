@@ -4,7 +4,7 @@ public class Car {
 
   private  String brand;
   private  int mileage;
-  private  int serviceOnMileage = 200_000;
+  private static final int SERVICE_ON_MILEAGE = 200_000;  //static final wielkimi literami
 
 
   public Car(String brand, int mileage){
@@ -22,7 +22,7 @@ public class Car {
     }
 
     public int howManyKmToService(){
-        int kmToService = serviceOnMileage - mileage;
+        int kmToService = SERVICE_ON_MILEAGE - mileage;
         return kmToService;
     }
 

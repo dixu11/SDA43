@@ -35,5 +35,7 @@ public class Person{
         return "name: "+ name +" age: "+  age;
     }
 
-
+    public void setName(String name) {
+        this.name = name;
+    }
 }

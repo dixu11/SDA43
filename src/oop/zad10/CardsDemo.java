@@ -1,5 +1,9 @@
 package oop.zad10;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class CardsDemo {
 
     public static void main(String[] args) {
@@ -12,6 +16,22 @@ public class CardsDemo {
         for (Rank rank : Rank.values()) {
             System.out.println(rank);
         }
+
+        CardGame cardGame = new CardGame();
+        cardGame.compareCards(card1,card2);
+
+        List<Card> cards = new ArrayList<>();
+
+        for (Rank rank : Rank.values()) {
+            for (Suit suit : Suit.values()) {
+                Card card = new Card(rank, suit);
+                cards.add(card);
+            }
+        }
+
+        System.out.println(cards.size());
+        Collections.shuffle(cards);
+        System.out.println(cards);
     }
 }
 
@@ -27,6 +47,7 @@ W mainie wyświetl wszystkie możliwe rangi wykorzystując statyczną metodę en
 Każda z rang ma mieć przypisaną siłę, dla dwójki 2, trójki 3 itd.
 Obiekty kart mają mieć metodę pozwalającą na pobranie siły karty. Stwórz dodatkowy serwis pozwalający porównać
 *  dwie karty, drukujący tą która jest większa i zwracający ją.
+*
 Stwórz listę wszystkich możliwych rang w kolorze pik. (wykorzystaj pętle dla automatyzacji zadania)
 Stwórz całą talię, czyli listę wszystkich możliwych rang dla wszystkich możliwych kolorów.
 

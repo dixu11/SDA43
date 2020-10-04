@@ -1,6 +1,7 @@
 package oop.zad8;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Car {
     private Wheel[] wheels = new Wheel[4];
@@ -12,6 +13,16 @@ public class Car {
         wheels[3] = new Wheel();
     }
 
+    public void pierceRandomWheel() {
+        Random random = new Random();
+        int randomIndex = random.nextInt(wheels.length);
+        Wheel randomWheel = wheels[randomIndex];
+        randomWheel.pierce();
+    }
+
+    public Wheel[] getWheels() {
+        return wheels;
+    }
 
     @Override
     public String toString() {

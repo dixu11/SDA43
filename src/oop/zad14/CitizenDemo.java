@@ -5,6 +5,7 @@ import java.util.List;
 
 public class CitizenDemo {
     public static void main(String[] args) {
+
         King king = new King("Artur");
         Peasant peasant = new Peasant("Ronin");
         Soldier soldier = new Soldier("Wiktor");

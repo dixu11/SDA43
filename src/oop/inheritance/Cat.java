@@ -16,9 +16,6 @@ public class Cat extends Animal {
         age = 2;
     }*/
 
-
-
-
     public void makeSound() {
         System.out.println(" miałczy, miał! ");
     }
@@ -26,6 +23,10 @@ public class Cat extends Animal {
     @Override
     public void attack() {
         System.out.println("kot drapie");
+    }
+
+    public void chaseMice() {
+        System.out.println("Kot goni mysz");
     }
 
 }

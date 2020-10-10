@@ -35,7 +35,5 @@ public class AnimalsDemo {
         /*Animal unknownAnimal = new Animal("Pieszczoch",10);
         unknownAnimal.makeSound();
         unknownAnimal.goToSleep();*/ // wykorzystanie abstrakcyjnej klasy zabezpiecza przed tworzeniem obiektu z klasy ogolnej
-
-
     }
 }

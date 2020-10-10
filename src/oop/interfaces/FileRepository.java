@@ -1,6 +1,6 @@
 package oop.interfaces;
 
-public class FileRepository {
+public class FileRepository implements  Repository {
 
     public void save() {
         System.out.println("Zapisujemy do pliku na dysku");

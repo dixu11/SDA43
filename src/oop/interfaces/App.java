@@ -2,17 +2,21 @@ package oop.interfaces;
 
 public class App {
 
-    public FileRepository fileRepository = new FileRepository();
+    private Repository repository;
+
+    public App(Repository repository) {
+        this.repository = repository;
+    }
 
     public void start() {
         System.out.println("Start aplikacji");
-        fileRepository.load();
+        repository.load();
     }
 
 
     public void exit() {
         System.out.println("Zamknięcie aplikacji");
-        fileRepository.save();
+        repository.save();
     }
 
 

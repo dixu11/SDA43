@@ -1,0 +1,3 @@
+chleb,3
+mleko,2
+pepsi,5

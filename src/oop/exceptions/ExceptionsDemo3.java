@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ExceptionsDemo3 {
 
     public static void main(String[] args) {
-        File file = new File("files/products.txt");
+        File file = new File("src/test2.txt");
         try {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()){

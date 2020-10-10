@@ -1,6 +1,6 @@
 package oop.inheritance;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements Pet {
 
     public Cat() {
         super("Puszek",2);
@@ -22,6 +22,7 @@ public class Cat extends Animal {
 
     @Override
     public void attack() {
+
         System.out.println("kot drapie");
     }
 
@@ -29,4 +30,15 @@ public class Cat extends Animal {
         System.out.println("Kot goni mysz");
     }
 
+    @Override
+    public void goToSleep() {
+        super.goToSleep();
+        System.out.println("Wybiera parapet");
+
+    }
+
+    @Override
+    public void doTrick() {
+        System.out.println("gania za światełkiem");
+    }
 }

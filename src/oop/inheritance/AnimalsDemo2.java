@@ -33,9 +33,9 @@ public class AnimalsDemo2 {
             Cat animalAsCatRefference = (Cat) cat2; //downcasting
             animalAsCatRefference.chaseMice();
         }
-
-
-
-
     }
 }
+//   <<<Konkret                                     Abstrakcja>>>
+//    Klasa           Klasa Abstrakcyjna             Interfejs
+
+

@@ -5,6 +5,7 @@ public interface Pet {
 //    public static final int ZMIENNA = 10; // w interfejsie mozna tylko pisać stale statyczne
 
     void doTrick();
+
 }
 
 //interface ->

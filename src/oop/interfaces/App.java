@@ -18,7 +18,4 @@ public class App {
         System.out.println("Zamknięcie aplikacji");
         repository.save();
     }
-
-
-
 }

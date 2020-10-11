@@ -18,6 +18,14 @@ public abstract class Animal {
 
     public abstract void attack();
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     @Override
     public String toString() {
         return "Animal{" +

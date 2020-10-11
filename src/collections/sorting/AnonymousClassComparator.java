@@ -13,6 +13,7 @@ public class AnonymousClassComparator {
         animals.add("kot");
         animals.add("krowa");
 
+        //sortowanie wg dłogości stringa
         Comparator<String> lengthComparator = new Comparator<>(){
             public int compare(String text1, String text2) {
                 return text2.length() - text1.length();

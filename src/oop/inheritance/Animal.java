@@ -1,6 +1,6 @@
 package oop.inheritance;
 
-public abstract class Animal {
+public abstract class Animal implements Comparable<Animal>{
 
     private String name;
     private int age;
@@ -32,5 +32,10 @@ public abstract class Animal {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Animal other) {
+        return name.compareTo(other.name);
     }
 }

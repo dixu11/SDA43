@@ -1,9 +1,6 @@
 package collections.sets;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class SetDemo {
 
@@ -36,8 +33,11 @@ public class SetDemo {
         //numbers.get(0);
 
 
-
-
+        List<Double> lista = new ArrayList<>();
+        for (int i = 0; i < 1_000_000; i++) {
+            lista.add(0, Math.random());
+        }
+        System.out.println("dodane");
 
     }
 

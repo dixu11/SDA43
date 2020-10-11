@@ -15,12 +15,10 @@ public class SortDemo {
         numbers.add(10000);
         System.out.println(numbers);
         Comparator<Integer> myComparator = new SortindDescending();
+
        // numbers.sort(myComparator);
         sortMyList(numbers,myComparator);
-
         System.out.println(numbers);
-
-
     }
 
     public static void sortMyList(List<Integer> numbers,Comparator<Integer> comparator) {

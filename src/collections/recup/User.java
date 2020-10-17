@@ -18,6 +18,8 @@ public class User implements Comparable<User>{
                 '}';
     }
 
+
+
     @Override
     public int compareTo(User otherUser) {
         int result = email.length() - otherUser.email.length();

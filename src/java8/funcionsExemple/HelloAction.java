@@ -1,4 +1,4 @@
-package java8;
+package java8.funcionsExemple;
 
 public class HelloAction implements ButtonAction {
     @Override

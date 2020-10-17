@@ -2,7 +2,6 @@ package java8.lambda;
 
 public class FunctionsDemo {
     public static void main(String[] args) {
-
         MyConsumer krzykacz =  (String text)  -> {
             System.out.println(text.toUpperCase() + "!");
         };
@@ -21,6 +20,7 @@ public class FunctionsDemo {
         TextChanger first5asLower2 =  text -> text.substring(0, 5).toLowerCase();
 
         System.out.println(first5asLower.changeText("Co tam słychać?"));
+
 
 
     }

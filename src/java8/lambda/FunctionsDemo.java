@@ -17,6 +17,9 @@ public class FunctionsDemo {
             return text.substring(0, 5).toLowerCase();
         };
 
+        //skrocona wersja
+        TextChanger first5asLower2 =  text -> text.substring(0, 5).toLowerCase();
+
         System.out.println(first5asLower.changeText("Co tam słychać?"));
 
 

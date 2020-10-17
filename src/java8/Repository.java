@@ -2,6 +2,7 @@ package java8;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Repository {
 
@@ -13,6 +14,12 @@ public class Repository {
             }
         }
         return selectedNames;
+    }
+
+    public List<String> getNamesStartingOf2(char letter, List<String> names) {
+       return names.stream()
+               .filter(name ->  name.charAt(0) == letter)
+               .collect(Collectors.toList());
     }
 
 

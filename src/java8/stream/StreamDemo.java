@@ -1,18 +1,23 @@
-package java8;
+package java8.stream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
-public class Demo {
+public class StreamDemo {
+
     public static void main(String[] args) {
-        Repository repository = new Repository();
         List<String> names = new ArrayList<>();
         names.add("Dawid");
         names.add("Dagmara");
         names.add("Filip");
         names.add("Wojtas");
-        System.out.println(repository.getNamesStartingOf('D',names));
-        System.out.println(repository.getNamesStartingOf2('D',names));
 
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        names.forEach(name -> System.out.println(name));
     }
+
 }

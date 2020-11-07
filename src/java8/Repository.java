@@ -2,6 +2,7 @@ package java8;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Repository {
@@ -20,6 +21,16 @@ public class Repository {
        return names.stream()
                .filter(name ->  name.charAt(0) == letter)
                .collect(Collectors.toList());
+    }
+
+
+    public Optional<String> findNameInNames (List<String> names , String name){
+        for (String someName : names) {
+            if (name.equals(someName)) {
+                return Optional.of(name);
+            }
+        }
+        return Optional.empty();
     }
 
 

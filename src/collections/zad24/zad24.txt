@@ -1,0 +1,22 @@
+Zaimplementuj wzorzec memento.
+Przygotuj klasę Document z polami content, fontSize oraz color.
+Zaimplementuj metodę append(String) która pozwoli dodać do
+treści przekazany ciąg znaków oraz backspace(),
+której zadaniem będzie usunięcie ostatniego znaku, który zawiera
+ content. Dodatkowo wygeneruj settery do pozostałych pól oraz
+  przygotuj metodę toString().
+Stwórz klasę DocumentMemento z takimi samymi polami jak oryginalny
+dokument jednak jej obiekty mają być typu immutable
+W klasie Document przygotuj metody:
+ createMemento() która zwraca pamiątkę na bazie aktualnego stanu
+ dokumentu
+rollback(DocumentMemento) przyjmująca pamiątkę i ustawiająca stan
+dokumentu na ten z pamiątki
+Zaimplementuj klasę Caretaker jako obiekt zarządzający pamiątkami.
+ Ma być tworzony dla konkretnego dokumentu oraz przechowywać jego
+  wcześniejsze stany za pomocą stosu. Ma udostępniać dwie metody:
+save() zapisująca bieżący stan dokumentu
+reverse() cofająca dokument do poprzedniego stani
+przetestuj aplikację kilkukrotnie wywołując metody save() i
+reverse(). Zadbaj o to aby aplikacja nie zatrzymywała się jeśli
+wowołamy reverse() więcej razy niż dokument został zapisany

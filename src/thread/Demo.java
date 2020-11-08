@@ -28,7 +28,9 @@ public class Demo {
 
         System.out.println("Wystartowani");
         pracownik.join();
+        System.out.println("Coś pomiędzy"); // na 100% wykona się po 1 pracowniku
         pracownik2.join();
         System.out.println("Koniec programu");
+
     }
 }

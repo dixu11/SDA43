@@ -7,6 +7,7 @@ public class TreeDemo {
         thread.start();
 
 
+
         Thread.sleep(1000);
         //thread.stop(); // nieprawidlowy sposob zamykania wątku
         //prawidłowy sposób -> pozwolić żeby metoda run naturalnie zakończyła działanie (wykorzystać if)

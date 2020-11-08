@@ -1,7 +1,6 @@
-package iojava;
+package iojava.csv;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class Demo {
     public static void main(String[] args) {
@@ -22,8 +21,8 @@ public class Demo {
         //do formatu json
 
         CarRepository repository = new CarRepository();
-        //repository.saveCar(car2);
-        System.out.println(repository.getCars());
+        repository.saveCar(car2);
+      //  System.out.println(repository.getCars());
     }
 }
 

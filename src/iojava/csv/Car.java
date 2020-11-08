@@ -1,7 +1,8 @@
-package iojava;
+package iojava.csv;
 
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Car {
 
@@ -9,11 +10,14 @@ public class Car {
     private int mileageInKm;
     private LocalDate productionDate;
 
+
     public Car(String brandAndModel, int mileageInKm, LocalDate productionDate) {
         this.brandAndModel = brandAndModel;
         this.mileageInKm = mileageInKm;
         this.productionDate = productionDate;
     }
+
+
 
     public String getBrandAndModel() {
         return brandAndModel;

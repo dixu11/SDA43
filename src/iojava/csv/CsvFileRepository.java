@@ -1,4 +1,4 @@
-package iojava;
+package iojava.csv;
 
 import java.io.*;
 import java.util.ArrayList;

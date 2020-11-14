@@ -19,6 +19,21 @@ class CatToJsonMapperTest {
         Assertions.assertEquals(expectedCat,cat);
     }
 
+    @Test
+    public void should_create_dog_from_json_string(){
+        //given
+        TextFileLoader loader = new TextFileLoader();
+        String jsonDog =  loader.loadFromFile("src/main/resources/dog.json");
+        ObjectJsonMapper<Dog> mapper = new ObjectJsonMapper<>();
+        Dog expectedDog = new Dog("Reksio", "Daniel");
+
+        //when
+        Dog dog = mapper.mapJsonToObject(jsonDog, Dog.class);
+
+        //than
+        Assertions.assertEquals(expectedDog,dog);
+    }
+
 
 
 }

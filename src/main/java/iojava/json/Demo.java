@@ -11,5 +11,9 @@ public class Demo {
         TextFileLoader loader = new TextFileLoader();
       String json =  loader.loadFromFile("src/main/resources/cat.json");
         System.out.println(json);
+
+        CatToJsonMapper mapper = new CatToJsonMapper();
+        Cat cat = mapper.mapJsonToCat(json);
+        System.out.println(cat);
     }
 }

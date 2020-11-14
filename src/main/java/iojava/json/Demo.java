@@ -1,9 +1,5 @@
 package iojava.json;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.util.List;
-
 public class Demo {
     public static void main(String[] args) {
        // Cat cat = new Cat("Parszywek", 7);
@@ -12,7 +8,7 @@ public class Demo {
       String json =  loader.loadFromFile("src/main/resources/cat.json");
         System.out.println(json);
 
-        CatToJsonMapper mapper = new CatToJsonMapper();
+        CatJsonMapper mapper = new CatJsonMapper();
         Cat cat = mapper.mapJsonToCat(json);
         System.out.println(cat);
     }

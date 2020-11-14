@@ -29,7 +29,7 @@ public final class Car {
         mileage += distance;
     }
 
-    public void run(int distance) {
+    void run(int distance) {
         System.out.println("Car running on distance: " + distance);
         mileage += distance;
     }

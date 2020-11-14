@@ -12,6 +12,12 @@ public class Cat {
         this.age = age;
     }
 
+    //bezparametrowy konstruktor wymagany przez JACKSON
+    private Cat(){
+
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -24,6 +30,15 @@ public class Cat {
     @Override
     public int hashCode() {
         return Objects.hash(name, age);
+    }
+
+    //getery wymagane przez JACKSON
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     @Override

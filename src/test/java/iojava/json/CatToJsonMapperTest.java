@@ -25,7 +25,7 @@ class CatToJsonMapperTest {
         TextFileLoader loader = new TextFileLoader();
         String jsonDog =  loader.loadFromFile("src/main/resources/dog.json");
         ObjectJsonMapper<Dog> mapper = new ObjectJsonMapper<>();
-        Dog expectedDog = new Dog("Reksio", "Daniel");
+        Dog expectedDog = new Dog( "Daniel");
 
         //when
         Dog dog = mapper.mapJsonToObject(jsonDog, Dog.class);

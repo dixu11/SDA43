@@ -1,22 +1,19 @@
 package iojava.json;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class Dog {
 
-    private String name;
+    @JsonProperty("owner_name") // po stronie json uzywam : owner_name
     private String ownerName;
 
-    public Dog(String name, String ownerName) {
-        this.name = name;
+    public Dog( String ownerName) {
         this.ownerName = ownerName;
     }
 
     private Dog() {
-    }
-
-    public String getName() {
-        return name;
     }
 
     public String getOwnerName() {
@@ -28,19 +25,18 @@ public class Dog {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dog dog = (Dog) o;
-        return Objects.equals(name, dog.name) &&
+        return
                 Objects.equals(ownerName, dog.ownerName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, ownerName);
+        return Objects.hash(ownerName);
     }
 
     @Override
     public String toString() {
         return "Dog{" +
-                "name='" + name + '\'' +
                 ", ownerName='" + ownerName + '\'' +
                 '}';
     }

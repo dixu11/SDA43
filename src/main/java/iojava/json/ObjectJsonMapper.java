@@ -3,14 +3,14 @@ package iojava.json;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class CatJsonMapper {
+public class ObjectJsonMapper<T> {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-    public Cat mapJsonToCat(String json) {
+    public T mapJsonToObject(String json, Class<T> tClass) {
 
         try {
-            Cat cat = mapper.readValue(json, Cat.class);  // drugi argument -> informacja z jakiej klasy ma zbudowac obiekt
+            T cat = mapper.readValue(json, tClass);  // drugi argument -> informacja z jakiej klasy ma zbudowac obiekt
             return cat;
         } catch (JsonProcessingException e) {
             e.printStackTrace();
@@ -18,7 +18,7 @@ public class CatJsonMapper {
         return null;
     }
 
-    public String mapCatToJson(Cat cat) {
+    public String mapObjectToJson(T cat) {
         try {
             return mapper.writeValueAsString(cat);
         } catch (JsonProcessingException e) {
@@ -26,6 +26,7 @@ public class CatJsonMapper {
         }
         return "";
     }
+
 
 
 }

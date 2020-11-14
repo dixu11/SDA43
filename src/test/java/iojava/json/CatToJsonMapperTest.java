@@ -9,11 +9,11 @@ class CatToJsonMapperTest {
     public void should_create_object_from_json_string(){
         //given
         String jsonCat =  "{  \"name\":\"Parszywek\",  \"age\": 7}";
-        CatJsonMapper mapper = new CatJsonMapper();
+        ObjectJsonMapper<Cat> mapper = new ObjectJsonMapper<>();
         Cat expectedCat = new Cat("Parszywek", 7);
 
         //when
-        Cat cat = mapper.mapJsonToCat(jsonCat);
+        Cat cat = mapper.mapJsonToObject(jsonCat, Cat.class);
 
         //than
         Assertions.assertEquals(expectedCat,cat);
